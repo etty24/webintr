@@ -26,3 +26,27 @@ PAGES = {
 st.sidebar.image("upin ipin.jpg", width = 200)
 page = st.sidebar.radio("halaman", list(PAGES.keys()))
 PAGES[page]()
+
+
+st.markdown(
+    """
+
+            <style>
+    
+            [data-testid="stActionButtonIcon"] {
+                 display: none;
+            }
+            [data-testid="baseButton-header"] {
+                 display: none;
+            }
+
+            #MainMenu {visibility:hidden;}
+            footer {visibility:hidden;}
+
+                    </style>
+             """,
+     unsafe_allow_html=True,
+ )
+
+            
+
